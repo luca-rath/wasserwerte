@@ -256,6 +256,10 @@ function App() {
                         dangerouslySetInnerHTML={{ __html: problem }} />
                 </>)}</ul>
             </div>}
+
+            {!!values && !problems?.length && <div>
+                <p style={{ marginTop: 32, marginBottom: 0 }}>Keine Probleme erkannt</p>
+            </div>}
         </div>
     )
 }
